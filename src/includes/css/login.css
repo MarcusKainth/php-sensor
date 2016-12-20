@@ -1,0 +1,209 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=RobotoDraft:400,700);
+
+html, body {
+    background: #303f9f none repeat scroll 0% 0%;
+    margin: 0px;
+    padding: 0px;
+    color: #212121;
+    font: 400 16px/24px 'Roboto', sans-serif;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+
+::selection {
+  background: #ff80ab;
+}
+
+::-moz-selection {
+  background: #ff80ab;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.error {
+    margin-top: 0 !important;
+    position: relative;
+    top: 1.4rem;
+    left: 9rem;
+    float: left;
+}
+
+.error p {
+    color: #f44336;
+    font-size: 0.7rem;
+    line-height: 0;
+    margin: 0;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+    border-radius: 0;
+    height: 3rem;
+    font-size: 1rem;
+    margin: 0 0 15px 0;
+    padding: 0;
+    box-sizing: content-box;
+    -webkit-transition: border-bottom .2s ease-out;
+    -moz-transition: border-bottom .2s ease-out;
+    -ms-transition: border-bottom .2s ease-out;
+    -o-transition: border-bottom .2s ease-out;
+}
+input[type="checkbox"] {
+    display: none !important;
+}
+
+input[type="checkbox"]:checked + label span {
+    background:url(../images/check_radio_sheet.png) -21px top no-repeat;
+}
+
+.checkbox {
+    height: 35px;
+    display: inline;
+}
+
+.checkbox label {
+    top: 0rem !important;
+}
+
+input[type="checkbox"] + label span {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    vertical-align: middle;
+    background:url(../images/check_radio_sheet.png) left top no-repeat;
+}
+
+input[type="submit"], .btn a {
+    background: #ff4081;
+    width: 100%;
+    border: 0 none;
+    border-radius: 2px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.87);
+    padding: 10px 6px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    -webkit-appearance: none;
+}
+
+.btn {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.btn a {
+    margin-top: 0;
+    text-align: center;
+    padding: 0.45rem 0;
+    display: block;
+}
+
+.btn a:active, input[type="submit"]:active {
+    background: #f50057;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+    border-bottom: 2px solid #f50057;
+    outline: none;
+    margin-bottom: 14px;
+}
+
+input[type="text"]:focus + label, input[type="password"]:focus + label, input[type="email"]:focus + label {
+    top: -0.8rem;
+    font-size: 0.75rem;
+    color: #ff4081;
+}
+
+.active {
+    color: rgba(0, 0, 0, 0.54) !important;
+    top: -0.8rem !important;
+    font-size: 0.75rem !important;
+}
+
+.login-wrapper {
+    width: 306px;
+    height: 560px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fff;
+    border-radius: 4px 4px 2px 2px;
+    box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+}
+
+.img {
+    height: 12.5rem;
+    width: 100%;
+    background: #3F51B5;
+    border-radius: 2px 2px 0 0;
+}
+
+.longer {
+    height: 750px !important;
+}
+
+.img h1 {
+    font-family: 'RobotoDraft', sans-serif;
+    margin: 0;
+    padding: 4em 1em;
+    color: rgba(255, 255, 255, 0.87);
+    font-weight: 400;
+}
+
+.inner-wrapper {
+    padding: 10px 20px;
+}
+
+.login-wrapper input {
+    display: block;
+}
+
+.login-wrapper label {
+    color: rgba(0, 0, 0, 0.54);
+    position: absolute;
+    top: 0.8rem;
+    left: 0.8rem;
+    font-size: 1rem;
+    cursor: text;
+    transition: 0.2s ease-out;
+}
+
+.row {
+    width: 100%;
+    margin-left: 0;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 0.75rem;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.row a {
+    width: 100%;
+}
+
+.mobile-title, .mobile-register {
+    display: none;
+}

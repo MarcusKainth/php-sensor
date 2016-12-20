@@ -1,0 +1,288 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+@import url(https://fonts.googleapis.com/css?family=RobotoDraft:400,500);
+
+html, body {
+    margin: 0;
+    padding: 0;
+    color: #212121;
+    font: 400 16px/24px 'Roboto', sans-serif;
+    min-width: 1300px;
+}
+
+::-moz-selection {
+    color: rgba(255, 255, 255, 0.7);
+    background: #ff4081;
+}
+
+::selection {
+    color: rgba(255, 255, 255, 0.7);
+    background: #ff4081;
+}
+
+.mobile {
+    display: none;
+}
+
+div {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'RobotoDraft', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    color: #009688;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #009688;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #ff4081;
+    text-decoration: none;
+}
+
+h3 {
+    margin-top: 0;
+    color: #212121;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+header {
+    box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.container {
+    width: 1280px;
+    margin: auto;
+}
+
+.topbar, .navbar, .topbar a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.topbar a {
+    transition: color 0.5s cubic-bezier(.18,.89,.32,1.28);
+}
+
+.topbar a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.topbar {
+    height: 56px;
+    background: #00796b;
+}
+
+.navbar {
+    height: 48px;
+    background: #009688;
+}
+
+.logo {
+    display: inline-block;
+    padding: 16px 0;
+    font-size: 18px;
+    float: left;
+    font-weight: 500;
+}
+
+.logged-in {
+    float: right;
+    padding: 16px 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+nav {
+    width: 435px;
+    float: left;
+}
+
+nav ul {
+    overflow: hidden;
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.5s cubic-bezier(.18,.89,.32,1.28);
+    padding: 1px 16px;
+    text-align: center;
+    display: block;
+    font: 500 14px/44px Roboto,sans-serif;
+}
+
+li a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.active {
+    border-bottom-color: #fff;
+    color: #fff;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+}
+
+.main-heading {
+    height: 94px;
+    padding-top: 10px;
+}
+
+.main-left {
+    float: left;
+}
+
+.switch {
+    float: right;
+    width: 11rem;
+    height: 75px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#latest-temp {
+    font-size: 28px;
+    height: 65%;
+    color: #212121;
+    position: relative;
+    top: 7px;
+}
+
+#temp_chart {
+    width: 1280px;
+    height: 350px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#temp_chart h3 {
+    line-height: 350px;
+    font-family: 'RobotoDraft', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    margin: 0;
+}
+
+.temp-slider {
+    margin: 30px 0px;
+}
+
+input[type="number"] {
+    display: none;
+}
+
+.temp-settings {
+    width: 45%;
+    float: left;
+}
+
+.noUi-handle {
+    cursor: pointer;
+}
+
+.switch, .switch * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+}
+
+.switch label {
+    cursor: pointer;
+    left: -13px;
+    position: relative;
+}
+
+.switch label input[type=checkbox] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch label input[type=checkbox]:checked + .lever {
+    background-color: #84c7c1;
+}
+
+.switch label input[type=checkbox]:checked + .lever:after {
+    background-color: #26a69a;
+}
+
+.switch label .lever {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 15px;
+    background-color: #818181;
+    border-radius: 15px;
+    margin-right: 10px;
+    transition: background 0.3s ease;
+    vertical-align: middle;
+    margin: 0 16px;
+}
+
+.switch label .lever:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background-color: #F1F1F1;
+    border-radius: 21px;
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4);
+    left: -5px;
+    top: -3px;
+    transition: left 0.3s ease, background .3s ease, box-shadow 0.1s ease;
+}
+
+input[type=checkbox]:checked:not(:disabled) ~ .lever:active:after {
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1);
+}
+
+input[type=checkbox]:not(:disabled) ~ .lever:active:after {
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08);
+}
+
+.switch label input[type=checkbox]:checked + .lever:after {
+    left: 24px;
+}
+
+.switch input[type=checkbox][disabled] + .lever {
+    cursor: default;
+}
+
+.switch label input[type=checkbox][disabled] + .lever:after, .switch label input[type=checkbox][disabled]:checked + .lever:after {
+    background-color: #BDBDBD;
+}

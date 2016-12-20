@@ -1,0 +1,228 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=RobotoDraft:400,500);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+html, body {
+    background: #3f51b5 none repeat scroll 0% 0%;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font: 400 16px/24px 'Roboto', sans-serif;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+
+::selection {
+  background: #ff80ab;
+}
+
+::-moz-selection {
+  background: #ff80ab;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.error {
+    margin-top: 0 !important;
+    position: relative;
+    top: 1.4rem;
+    left: 9rem;
+    float: left;
+}
+
+.error p {
+    color: #f44336;
+    font-size: 0.7rem;
+    line-height: 0;
+    margin: 0;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 0;
+    height: 3rem;
+    font-size: 1rem;
+    margin: 0 0 15px 0;
+    padding: 0;
+    box-sizing: content-box;
+    color: #fff;
+    -webkit-transition: border-bottom .2s ease-out;
+    -moz-transition: border-bottom .2s ease-out;
+    -ms-transition: border-bottom .2s ease-out;
+    -o-transition: border-bottom .2s ease-out;
+}
+input[type="checkbox"] {
+    display: none !important;
+}
+
+input[type="checkbox"]:checked + label span {
+    background:url(../images/check_radio_sheet.png) -21px top no-repeat;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox label {
+    top: 0rem !important;
+}
+
+input[type="checkbox"] + label span {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    vertical-align: middle;
+    background:url(../images/check_radio_sheet.png) left top no-repeat;
+}
+
+input[type="submit"], .btn a {
+    background: rgba(0, 0, 0, 0);
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 2px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.87);
+    padding: 10px 6px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    -webkit-appearance: none;
+}
+
+.btn {
+    width: 100%;
+    display: none;
+}
+
+.btn a {
+    margin-top: 0;
+    text-align: center;
+    padding: 0.44rem 0;
+    display: block;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+    border-bottom: 2px solid #fff;
+    outline: none;
+    margin-bottom: 14px;
+}
+
+input[type="text"]:focus + label, input[type="password"]:focus + label, input[type="email"]:focus + label {
+    top: -0.8rem;
+    font-size: 0.75rem;
+    color: #fff;
+}
+
+.active {
+    color: rgba(255, 255, 255, 0.7) !important;
+    top: -0.8rem !important;
+    font-size: 0.75rem !important;
+}
+
+.login-wrapper {
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    background: #3f51b5;
+}
+
+.img {
+    top: 6.5rem;
+    display: table;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.reg-mobile {
+    top: 3.5rem !important;
+}
+
+.img h1 {
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    padding: 20px 24px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 56px;
+}
+
+.img h2 {
+    font-family: 'RobotoDraft', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+}
+
+.img .desktop-title {
+    display: none;
+}
+
+.inner-wrapper {
+    position: relative;
+    top: 8.5rem;
+    padding: 10px 30px;
+}
+
+.reg-mobile-inner {
+    top: 5.5rem !important;
+}
+
+.login-wrapper input {
+    display: block;
+}
+
+.login-wrapper label {
+    color: rgba(255, 255, 255, 0.54);
+    position: absolute;
+    top: 0.8rem;
+    left: 0.8rem;
+    font-size: 1rem;
+    cursor: text;
+    transition: 0.2s ease-out;
+}
+
+.row {
+    width: 100%;
+    margin-left: 0;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 0.75rem;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.row a {
+    width: 100%;
+}
+
+/*.btn-row {
+    display: inline-block !important;
+    width: 50%;
+}*/
+
+.mobile-register a {
+    width: 100%;
+    padding: 25px 0px;
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+    background: #5c6bc0;
+}
